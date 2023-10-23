@@ -1,0 +1,45 @@
+*{
+  color: rgb(150, 0, 25);
+}
+
+.ejemplo1 {
+  color: red
+
+}
+
+body{
+  background-color:rgb(6, 7, 8);
+}
+
+/*Por clase*/
+section article h2{
+  color:rgb(2, 100, 37)
+}
+
+header h1{
+  color:rgb(185, 25, 8);
+}
+
+
+#container{
+  width:300px;
+  height:350px;
+  background-color: rgba(255, 0, 0, 0.355);
+  border-style: dotted;
+  border-color: azure;
+  border:10 px; color:darkblue;
+  margin:auto; padding:0cqmax;
+   }
+  
+
+.grid1{
+  display:grid;
+  background-color: blueviolet;
+  grid-template-areas: 
+  "header header header";
+
+
+}
+
+
+

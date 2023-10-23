@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CONTACTO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/Web/estilos.css" rel="stylesheet">
+        <style> 
+            form {
+                /* Centrar el formulario en la página */
+                margin: 0 auto;
+                width: 400px;
+                /* Esquema del formulario */
+                padding: 1em;
+                border: 1px solid;
+                color: chocolate;
+                border-radius: 1em;
+              }
+
+              ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              }
+
+              form li + li {
+                margin-top: 1em;
+               
+              }
+
+              label {
+                /* Tamaño y alineación uniforme */
+                display: inline-block;
+                width: 90px;
+                text-align: right;
+                color:crimson
+              }
+
+              input,
+              textarea {
+                /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+                   Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+                font: 1em sans-serif;
+
+                /* Tamaño uniforme del campo de texto */
+                width: 300px;
+                box-sizing: border-box;
+                
+
+                /* Hacer coincidir los bordes del campo del formulario */
+                border: 1px solid cadetblue;
+              }
+
+              input:focus,
+              textarea:focus {
+                /* Destacado adicional para elementos que tienen el cursor */
+                border-color: #000;
+              }
+
+              textarea {
+                /* Alinear los campos de texto multilínea con sus etiquetas */
+                vertical-align: top;
+
+                /* Proporcionar espacio para escribir texto */
+                height: 5em;
+              }
+
+              .button {
+                /* Alinear los botones con los campos de texto */
+                padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+              }
+
+              button {
+                /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+                   entre las etiquetas y sus campos de texto */
+                margin-left: 0.5em;
+                color:crimson
+              }
+        </style>
+    </head>
+
+    <body>
+<form action="/my-handling-form-page" method="post">
+    <p>Los campos obligatorios se marcan con un <abbr title="required">*</abbr>.</p>
+
+    <p>
+        <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry" >
+        <label for="taste_1">Me gustan las cerezas</label>
+      </p>
+      <p>
+        <input type="checkbox" id="taste_2" name="taste_banana" value="banana" >
+        <label for="taste_2">Me gustan los plátanos</label>
+      </p>
+
+    <textarea>
+   Registrate! Ejemeplo de texto
+      </textarea>
+      <fieldset>
+        <legend>Tamaño del zumo de fruta</legend>
+        <p>
+          <input type="radio" name="size" id="size_1" value="small" >
+          <label for="size_1">Pequeño</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="medium" >
+          <label for="size_2">Mediano</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_3" value="large" >
+          <label for="size_3">Grande</label>
+        </p>
+      </fieldset>
+      <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <abbr title="required" arial-label="required">*</abbr>
+          <input type="text" id="name" name="user_name" >
+        </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <abbr title="required" arial-label="required">*</abbr>
+          <input type="email" id="mail" name="user_mail" >
+        </li>
+        <li>
+          <label for="msg">Mensaje:</label>
+          <abbr title="required" arial-label="required">*</abbr>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+    <li class="button">
+          <button type="submit">ENVIAR</button>
+        </li>
+        <li>
+          <input type="text" value="Gracias por unirte a la comunidad!">
+        </li>
+      </ul>
+    </form>
+
+    </body>
+
+    </html>
